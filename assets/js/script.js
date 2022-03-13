@@ -1,18 +1,38 @@
+// displays the current day of the week
 var currentday = moment().format("MMMM Do, YYYY"); // 2012-02-29
 console.log(currentday);
 
 var currentDayEl = document.getElementById("currentDay");
 currentDayEl.textContent = currentday;
 
-
+// button to save the input data
 var saveBtnArr = document.querySelectorAll(".saveBtn");
 
+//goes through each time slot and allows the button to react (?)
 for ( var i = 0; i < saveBtnArr.length; i++ ) {
   saveBtnArr[i].addEventListener("click", function() {
     console.log(this.previousElementSibling.value);
+
+    var eventInput = document.getElementByClassName(".inputTxt").value;
+    console.log(eventInput);
+   
+
+// create a <P> in JS as opposed to creating it in HTML
+
   }
   )}
 
+
+
+    // var eventInput = JSON.parse(localStorage.getItem("tasks"));
+    // var eventInput = document.querySelectorAll(".inputTxt"); 
+    // localStorage.setItem("eventInput", "this.previousElementSibling.value")
+   
+  
+   // var input = document.getElementsByClassName("").previousElementSibling.value.innerHtml;
+// var inputTxtVal = document.querySelectorAll(".inputTxt");
+// for (var i = 0; i < inputTxtVal.length; i++) {
+//   // inputTxtVal[i].addEventListener("click" functio() {
 
 
 
