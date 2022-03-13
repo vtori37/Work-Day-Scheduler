@@ -24,6 +24,7 @@ for ( var i = 0; i < saveBtnArr.length; i++ ) {
 
 };
 
+// retrieves and displays the events stored on local storage
 document.getElementById("text1").innerHTML = localStorage.getItem("9am");
 document.getElementById("text2").innerHTML = localStorage.getItem("10am");
 document.getElementById("text3").innerHTML = localStorage.getItem("11am");
