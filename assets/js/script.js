@@ -19,14 +19,36 @@ for ( var i = 0; i < saveBtnArr.length; i++ ) {
 // logs the time and event in localStorage
     var event = this.previousElementSibling.previousElementSibling.getAttribute("id");
       console.log(event);
-    localStorage.setItem(event, eventInput);
-
+    localStorage.setItem(event, (eventInput));
   });
+
 };
 
+document.getElementById("text1").innerHTML = localStorage.getItem("9am");
+document.getElementById("text2").innerHTML = localStorage.getItem("10am");
+document.getElementById("text3").innerHTML = localStorage.getItem("11am");
+document.getElementById("text4").innerHTML = localStorage.getItem("12pm");
+document.getElementById("text5").innerHTML = localStorage.getItem("1pm");
+document.getElementById("text6").innerHTML = localStorage.getItem("2pm");
+document.getElementById("text7").innerHTML = localStorage.getItem("3pm");
+document.getElementById("text8").innerHTML = localStorage.getItem("4pm");
+document.getElementById("text9").innerHTML = localStorage.getItem("5pm");
 
 
 
+
+
+
+
+
+
+// //post values to respective time block
+// var eventTextArr = document.querySelectorAll(".eventText");
+// for ( var i = 0; i < eventTextArr.length; i++ ) {
+//   eventTextArr[i].addEventListener("load", function() {
+//     var eventTxt = localStorage.getItem(i).textContent;
+//     console.log("It works!");
+//   };
 
 
 /*
@@ -58,20 +80,6 @@ var eventInput = JSON.parse(localStorage.getItem("tasks"));
 use if statements comparing chosen time when color-coding time
 
 // make sure to type stuff out yourself
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
