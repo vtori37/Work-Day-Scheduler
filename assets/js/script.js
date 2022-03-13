@@ -11,20 +11,33 @@ var saveBtnArr = document.querySelectorAll(".saveBtn");
 //goes through each time slot and allows the button to react (?)
 for ( var i = 0; i < saveBtnArr.length; i++ ) {
   saveBtnArr[i].addEventListener("click", function() {
-    console.log(this.previousElementSibling.value);
 
-    var eventInput = document.getElementByClassName(".inputTxt").value;
-    console.log(eventInput);
-   
+// 'this' is saveBtnArr, so "this.previousElementSibling.value" is referring to textarea in HTML
+    var eventInput = this.previousElementSibling.value;
+      console.log(eventInput);
 
-// create a <P> in JS as opposed to creating it in HTML
+// logs the time and event in localStorage
+    var event = this.previousElementSibling.previousElementSibling.getAttribute("id");
+      console.log(event);
+    localStorage.setItem(event, eventInput);
 
-  }
-  )}
+  });
+};
 
 
 
-    // var eventInput = JSON.parse(localStorage.getItem("tasks"));
+
+
+
+/*
+
+
+  var eventInput = document.querySelectorAll(".inputTxt");
+  for ( var i = 0; i < eventInput.length; i++ ) {
+
+      eventInput[i] = document.getElementById("this.previousElementSibling.value");
+
+var eventInput = JSON.parse(localStorage.getItem("tasks"));
     // var eventInput = document.querySelectorAll(".inputTxt"); 
     // localStorage.setItem("eventInput", "this.previousElementSibling.value")
    
@@ -38,7 +51,7 @@ for ( var i = 0; i < saveBtnArr.length; i++ ) {
 
 
   
-/*
+
 - store time slot as a key
 - store the input value as the value of the key 
 ? get specific hour of the day using moment.js
