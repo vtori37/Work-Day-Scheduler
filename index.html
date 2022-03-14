@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css"
+    integrity="sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q=="
+    crossorigin="anonymous" <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
@@ -22,59 +25,61 @@
 
   <section class="container">
     <!-- Timeblocks go here -->
-    <button class="task-creator">Task</button>
     <div>
-      <div class="time" id="9am">9:00 am</div>
-      <textarea id="text1" class="eventText"></textarea>
-      <button id="9amTxt" class="saveBtn">Save</button>
+      <h2 class="display-4" id="clock">Current Time</h2>
+    </div>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 9am">9:00 a.m.</div>
+      <textarea id="text1" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id="9amTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="10am">10:00 am</div>
-      <textarea id="text2" class="eventText"></textarea>
-      <button id="10amTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 10am">10:00 a.m.</div>
+      <textarea id="text2" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id="10amTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="11am">11:00 am</div>
-      <textarea id="text3" class="eventText"></textarea>
-      <button id="11amTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 11am">11:00 a.m.</div>
+      <textarea id="text3" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id=" 11amTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="12pm">12:00 pm</div>
-      <textarea id="text4" class="eventText"></textarea>
-      <button id="12pmTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 12pm">12:00 p.m</div>
+      <textarea id="text4" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id="12pmTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="1pm">1:00 pm</div>
-      <textarea id="text5" class="eventText"></textarea>
-      <button id="1pmTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 1pm">1:00 p.m</div>
+      <textarea id="text5" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id=" 1pmTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="2pm">2:00 pm</div>
-      <textarea id="text6" class="eventText"></textarea>
-      <button id="2pmTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 2pm">2:00 p.m</div>
+      <textarea id="text6" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id="2pmTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="3pm">3:00 pm</div>
-      <textarea id="text7" class="eventText"></textarea>
-      <button id="3pmTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 3pm">3:00 p.m</div>
+      <textarea id="text7" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id=" 3pmTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="4pm">4:00 pm</div>
-      <textarea id="text8" class="eventText"></textarea>
-      <button id="4pmTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id=" 4pm">4:00 p.m</div>
+      <textarea id="text8" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id="4pmTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
-    <div>
-      <div id="5pm">5:00 pm</div>
-      <textarea id="text9" class="eventText"></textarea>
-      <button id="5pmTxt" class="saveBtn">Save</button>
+    <div class="row">
+      <div class="time mb-3 fs-4 col border-right border-top" id="5pm">5:00 p.m</div>
+      <textarea id="text9" class="eventText form-control z-depth-1 purple-border w-75 p-3 col-10"></textarea>
+      <button id=" 5pmTxt" class="saveBtn col btn-outline-success bi-save btn-sm">Save</button>
     </div>
 
 

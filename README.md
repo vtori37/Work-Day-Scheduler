@@ -21,4 +21,6 @@ Here is a link to the live website:
 * HTML5
 * CSS 
 * JS
+* Bootstrap
+* Moment.js
 --- 
