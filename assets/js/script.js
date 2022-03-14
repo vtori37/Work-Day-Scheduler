@@ -69,4 +69,6 @@ document.getElementById("text9").innerHTML = localStorage.getItem("5pm");
       $(this).addClass("past");
     }
     });
+
+    //notes
   
