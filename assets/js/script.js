@@ -1,5 +1,5 @@
 // displays the current day of the week
-var currentday = moment().format("MMMM Do, YYYY"); // 2012-02-29
+var currentday = moment().format("dddd, MMMM Do, YYYY"); // 2012-02-29
 console.log(currentday);
 
 var currentDayEl = document.getElementById("currentDay");
@@ -45,30 +45,28 @@ document.getElementById("text9").innerHTML = localStorage.getItem("5pm");
 
 
 
-  // var taskColor = function () {
-  
-  // $(".time").each(function() {
-    
-    var currentHour = moment().format('hh') // current
+ 
+  $(".time").each( function() {
+    var currentHour = moment().format('h') // current
   console.log(currentHour);
 
-  //   var timeBlock = document.querySelectorAll("time");
-  //   // for events in the future
-  //   if (currentHour < timeBlock ) {
-  //     $(this).addClass(".future");
-  //     $(this).removeClass(".past");
-  //     $(this).removeClass(".present");
-  //   } // for events in the present
-  //   else if (currentHour == timeBlock) {
-  //     $(this).addClass(".present");
-  //     $(this).removeClass(".future");
-  //     $(this).removeClass(".past");
-  //   } // for past events
-  //   else {
-  //     $(this).addClass(".past");
-  //     $(this).removeClass(".present");
-  //     $(this).removeClass(".future");
-  //   }
-  //   )};
-  // }
-
+    var timeBlock = parseInt($(this).attr("id"));
+    console.log(timeBlock)
+  //  for events in the future
+    if (currentHour < timeBlock ) {
+      $(this).removeClass("past");
+      $(this).removeClass("present");
+      $(this).addClass("future");
+    } //for events in the present
+    else if (currentHour == timeBlock) {
+      $(this).removeClass("future");
+      $(this).removeClass("past");
+      $(this).addClass("present");
+    } // for past events
+    else {
+      $(this).removeClass("present");
+      $(this).removeClass("future");
+      $(this).addClass("past");
+    }
+    });
+  
