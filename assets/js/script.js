@@ -45,6 +45,30 @@ document.getElementById("text9").innerHTML = localStorage.getItem("5pm");
 
 
 
+  // var taskColor = function () {
+  
+  // $(".time").each(function() {
+    
+    var currentHour = moment().format('hh') // current
+  console.log(currentHour);
 
-
+  //   var timeBlock = document.querySelectorAll("time");
+  //   // for events in the future
+  //   if (currentHour < timeBlock ) {
+  //     $(this).addClass(".future");
+  //     $(this).removeClass(".past");
+  //     $(this).removeClass(".present");
+  //   } // for events in the present
+  //   else if (currentHour == timeBlock) {
+  //     $(this).addClass(".present");
+  //     $(this).removeClass(".future");
+  //     $(this).removeClass(".past");
+  //   } // for past events
+  //   else {
+  //     $(this).addClass(".past");
+  //     $(this).removeClass(".present");
+  //     $(this).removeClass(".future");
+  //   }
+  //   )};
+  // }
 
